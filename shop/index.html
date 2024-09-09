@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - E-commerce</title>
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header></header>
+
+    <!-- Product Filters and Search -->
+    <section class="filter-section">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search products..." />
+      </div>
+      <div class="filters">
+        <label>Category:</label>
+        <select title="category-filter" id="category-filter">
+          <option value="all">All</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+        </select>
+        <label>Price Range:</label>
+        <select title="price-filter" id="price-filter">
+          <option value="all">All</option>
+          <option value="low">Under $100</option>
+          <option value="medium">$100 - $500</option>
+          <option value="high">Above $500</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section id="product-listing">
+      <h2>Shop Our Products</h2>
+      <div class="product-grid">
+        <!-- Product items added dynamically -->
+      </div>
+    </section>
+
+    <button id="back-to-top" type="button" title="Go to top">↑</button>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <!-- Common JavaScript and Shop Specific Script -->
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/global.js"></script>
+    <script src="shop.js"></script>
+  </body>
+</html>

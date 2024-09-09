@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - E-commerce</title>
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="checkout.css" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header></header>
+
+    <!-- Checkout Section -->
+    <section id="checkout-section">
+      <h1>Checkout</h1>
+      <form id="checkout-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" id="address" required />
+        </div>
+        <div class="form-group">
+          <label for="payment-method">Payment Method:</label>
+          <select id="payment-method" required>
+            <option value="">Select a Payment Method</option>
+            <option value="credit-card">Credit Card</option>
+            <option value="cod">Cash On Delivery</option>
+          </select>
+        </div>
+        <!-- display total price -->
+        <p id="total-price"></p>
+        <div class="form-group">
+          <button type="submit" id="submit-button">Submit</button>
+        </div>
+      </form>
+      <div id="confirmation-message">
+        <h2>Thank you for your purchase!</h2>
+        <p>Your order has been placed successfully.</p>
+      </div>
+    </section>
+
+    <button id="back-to-top" type="button" title="Go to top">↑</button>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <!-- Common JavaScript and Checkout Specific Script -->
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/global.js" type="module"></script>
+    <script src="checkout.js"></script>
+  </body>
+</html>

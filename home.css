@@ -1,0 +1,56 @@
+/* Home Page Specific Styles */
+.banner {
+  background-color: #e74c3c;
+  color: white;
+  text-align: center;
+  padding: 80px;
+}
+
+#featured-products {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  
+}
+
+.product-card {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+}
+
+.product-card h3,
+.product-card p {
+  color: #2c3e50;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 200px;
+}
+
+.product-card button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

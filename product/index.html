@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - E-commerce</title>
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="product.css" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header></header>
+
+    <!-- Product Details Section -->
+    <section id="product-detail">
+      <div class="product-image">
+        <img
+          src="../images/product-large.jpg"
+          alt="Product Image"
+          id="product-img"
+        />
+      </div>
+      <div class="product-info">
+        <h1 id="product-name">Product Name</h1>
+        <p id="product-price">$100</p>
+        <p id="product-description">
+          This is a great product with excellent features.
+        </p>
+
+        <label for="product-quantity">Quantity:</label>
+        <select id="product-quantity">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+
+        <button id="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+
+    <button id="back-to-top" type="button" title="Go to top">↑</button>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <!-- Common JavaScript and Product Specific Script -->
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/global.js"></script>
+    <script src="product.js"></script>
+  </body>
+</html>

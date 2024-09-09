@@ -1,0 +1,81 @@
+/* Shop Page Specific Styles */
+.filter-section {
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+  background-color: #bdc3c7;
+}
+
+.search-bar input {
+  padding: 10px;
+  margin-right: 20px;
+  width: 200px;
+  border: 1px solid #bdc3c7;
+}
+
+.filters label {
+  margin-right: 10px;
+  color: #2c3e50;
+}
+
+.filters select {
+  padding: 5px;
+  margin-right: 20px;
+}
+
+#product-listing {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #bdc3c7;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+}
+
+.product-card h3,
+.product-card p {
+  color: #2c3e50;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.product-card button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
