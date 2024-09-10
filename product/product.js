@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   console.log(productId);
   const product = products.find((product) => product.id === productId);
   document.getElementById('product-name').textContent = product.name;
-  document.getElementById('product-price').textContent = product.price;
+  document.getElementById('product-price').textContent = `$${product.price}`;
   document.getElementById('product-description').textContent =
     product.description;
   document.getElementById('product-img').src = product.image;
