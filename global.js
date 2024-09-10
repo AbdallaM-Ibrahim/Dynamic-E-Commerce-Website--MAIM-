@@ -66,18 +66,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-document.getElementsByTagName('header')[0].innerHTML = `
-    <nav>
-        <ul class="navbar">
-            <li><a href="/">Home</a></li>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/cart" id='nav-cart'>Cart${
-              getCartCount() ? '<' + getCartCount() + '>' : ''
-            }</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
-`;
+document.getElementById('nav-cart').innerHTML =
+  `Cart${ getCartCount() ? '<' + getCartCount() + '>' : ''} `;
 
 document.getElementsByTagName('footer')[0].innerHTML = `
     <span>Contact us: info@example.com</span>
