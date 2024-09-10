@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     featuredProducts.forEach((product) => {
       const productHTML = `
                 <div class="product-card" id="product:${product.id}">
-                    <img src="${product.image}" alt="${product.name}">
-                    <h3>${product.name}</h3>
+                    <a href="product/?product_id=${product.id}"><img src="${product.image}" alt="${product.name}"></a>
+                    <a href="product/?product_id=${product.id}"><h3>${product.name}</h3></a>
                     <p>$${product.price}</p>
                     <button>Add to Cart</button>
                 </div>

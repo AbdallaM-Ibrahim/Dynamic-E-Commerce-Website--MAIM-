@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
     filteredProducts.forEach((product) => {
       const productHTML = `
                 <div id="product:${product.id}" class="product-card">
-                    <a href="/product/?product_id=${product.id}"><img src="${product.image}" alt="${product.name}"></a>
+                    <a href="../product/?product_id=${product.id}"><img src="${product.image}" alt="${product.name}"></a>
                     <div class="product-details">
-                      <a href="/product/?product_id=${product.id}"><h3>${product.name}</h3></a>
+                      <a href="../product/?product_id=${product.id}"><h3>${product.name}</h3></a>
                       <p>$${product.price}</p>
                       <button>Add to Cart</button>
                     </div>
