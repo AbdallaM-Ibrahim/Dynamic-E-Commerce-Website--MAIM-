@@ -1,14 +1,12 @@
-const cartStorageKey = 'cart';
-
 // Get cart from localStorage
 function getCart() {
-  let cart = localStorage.getItem(cartStorageKey);
+  let cart = localStorage.getItem('cart');
   return cart ? JSON.parse(cart) : [];
 }
 
 // Save cart to localStorage
 function saveCart(cart) {
-  localStorage.setItem(cartStorageKey, JSON.stringify(cart));
+  localStorage.setItem('cart', JSON.stringify(cart));
   try {
     document.getElementById('nav-cart').textContent = `Cart${
       getCartCount() ? '<' + getCartCount() + '>' : ''

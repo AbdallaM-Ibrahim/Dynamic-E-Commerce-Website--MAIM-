@@ -4,7 +4,8 @@ const products = [
     name: 'Laptop',
     price: 800,
     category: 'electronics',
-    image: '/assets/images/laptop.webp',
+    image:
+      'https://raw.githubusercontent.com/AbdallaM-Ibrahim/Dynamic-E-Commerce-Website--MAIM-/main/assets/images/laptop.webp',
     description: 'Latest laptop model with 16GB RAM',
   },
   {
@@ -12,7 +13,8 @@ const products = [
     name: 'T-Shirt',
     price: 20,
     category: 'clothing',
-    image: '/assets/images/t-shirt.jpg',
+    image:
+      'https://raw.githubusercontent.com/AbdallaM-Ibrahim/Dynamic-E-Commerce-Website--MAIM-/main/assets/images/t-shirt.jpg',
     description: 'Plain casual t-shirt',
   },
   {
@@ -20,7 +22,8 @@ const products = [
     name: 'Smartphone',
     price: 500,
     category: 'electronics',
-    image: '/assets/images/smartphone.jpg',
+    image:
+      'https://raw.githubusercontent.com/AbdallaM-Ibrahim/Dynamic-E-Commerce-Website--MAIM-/main/assets/images/smartphone.jpg',
     description: 'Latest smartphone with 8GB RAM',
   },
   {
@@ -28,7 +31,8 @@ const products = [
     name: 'Jeans',
     price: 50,
     category: 'clothing',
-    image: '/assets/images/jeans.jpeg',
+    image:
+      'https://raw.githubusercontent.com/AbdallaM-Ibrahim/Dynamic-E-Commerce-Website--MAIM-/main/assets/images/jeans.jpeg',
     description: 'Blue denim jeans',
   },
   {
@@ -36,7 +40,8 @@ const products = [
     name: 'Headphones',
     price: 100,
     category: 'electronics',
-    image: '/assets/images/headphones.png',
+    image:
+      'https://raw.githubusercontent.com/AbdallaM-Ibrahim/Dynamic-E-Commerce-Website--MAIM-/main/assets/images/headphones.png',
     description: 'Wireless over-ear headphones',
   },
 ];
