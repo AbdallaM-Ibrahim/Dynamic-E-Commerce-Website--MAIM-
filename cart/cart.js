@@ -81,6 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   checkoutButton.addEventListener('click', function () {
-    window.location.href = '/checkout';
+    window.location.href = '../checkout';
   });
 });
